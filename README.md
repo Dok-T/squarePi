@@ -6,16 +6,16 @@ It's not a true PWM signal, but a square signal. You might use a capacitor with 
 WARNING: I'm not responsible for any blown RPIs/IoT devices or electronic components suchs as fans, leds, whatever.
 Us it at your own risk!
 
-ls /sys/class/gpio/ | egrep -Eo "[0-9]{2,4}" >> $INTVAR
-printf "$INTVAR\n"
-Use case instead of if conditions
-
 
 trap ctrl-c and call ctrl_c() thanks to this website: https://rimuhosting.com/knowledgebase/linux/misc/trapping-ctrl-c-in-bash
 dep needed: bc (for maths operations)
 install it with pacman -S bc / apt-get install bc to use this programm.
 
-# Known bugs: "preheating" doesn't seem to care about the $phs var. So at this moment it does not work.
+## Known bugs: 
+ - "preheating" doesn't seem to care about the $phs var. So at this moment it does not work.
+
+## Todo quickly! :
+ - Use "case" instead of "if" conditions
 
 ## ROADMAP:
  - Tell what GPIOs are available for a basic raspberry pi (for Pi clones please ask me to add yout platform on this software)
