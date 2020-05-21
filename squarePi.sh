@@ -36,7 +36,6 @@ function dots () {
 }
 
 function ctrl_c() {
-     dots;
      echo "Shutting down...";
      shutthisdown;
 }
