@@ -1,10 +1,12 @@
 
 # squarePi.sh by DokT under MIT License.
-Made 20/05/2020, last update 21/05/2020
+Made 20/05/2020, last update 22/05/2020
 
-It's not a true PWM signal, but a square signal. You might use a capacitor with a resistance to get a sinusoidal signal.
+It's not a true PWM signal, but a square signal.
+The Raspberry Pi is not capable of that.
+You might use a capacitor with a resistance to get a sinusoidal signal.
 WARNING: I'm not responsible for any blown RPIs/IoT devices or electronic components suchs as fans, leds, whatever.
-Us it at your own risk!
+Use this tool at your own risk!
 
 ls /sys/class/gpio/ | egrep -Eo "[0-9]{2,4}" >> $INTVAR
 printf "$INTVAR\n"
@@ -12,14 +14,14 @@ Use case instead of if conditions
 
 
 trap ctrl-c and call ctrl_c() thanks to this website: https://rimuhosting.com/knowledgebase/linux/misc/trapping-ctrl-c-in-bash
-dep needed: bc (for maths operations)
+dep needed: bc (for math operations)
 install it with pacman -S bc / apt-get install bc to use this programm.
 
 # Known bugs: "preheating" doesn't seem to care about the $phs var. So at this moment it does not work.
 
 ## ROADMAP:
- - Tell what GPIOs are available for a basic raspberry pi (for Pi clones please ask me to add yout platform on this software)
- - Auto detect where the GPIO should be used and export them id they're aren't exported yet and applying offset (issue for ArchLinuxArm users)
+ - Tell what GPIOs are available for a basic Raspberry Pi (for Pi clones please ask me to add your platform on this software)
+ - Auto detect where the GPIO should be used and export them id they're aren't exported yet and applying offset (issue for ArchLinuxARM users)
  - Supporting .conf files to add feataures and allowing the daemon mode
  - make it as daemon, so this would add the autostart feature
  - making a CLI based for setting up when enabling fans and make the daemon using configurations files
