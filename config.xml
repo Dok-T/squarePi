@@ -1,0 +1,22 @@
+<root>
+  <informations>
+    <software>
+      <name>
+      squarePi
+      </name>
+      <version>
+      0.1
+      </version>
+      <author>
+      DokT
+      </author>
+    </software>
+  </informations>
+  <config>
+    <log>
+      <enabled>
+      1
+      </enabled>
+    </log>
+  </config>
+</root>
