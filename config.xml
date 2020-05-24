@@ -6,7 +6,7 @@
       squarePi
       </name>
       <version>
-      0.1
+      0.2
       </version>
       <author>
       DokT
@@ -15,8 +15,8 @@
   </informations>
   <config>
     <log>
-      <enabled>1</enabled>
-      <log_path>/var/log/squarePi/</log_path>
+      <enabled>0</enabled>
+      <log_path>./</log_path>
     </log>
   </config>
 </root>

@@ -1,6 +1,6 @@
 
 # squarePi.sh by DokT under MIT License.
-Made 20/05/2020, last update 23/05/2020
+Made 20/05/2020, last update 24/05/2020
 
 It's not a true PWM signal, but a square signal.
 The Raspberry Pi is not capable of that.
@@ -14,11 +14,18 @@ dep needed: bc (for math operations)
 install it with pacman -S bc / apt-get install bc to use this programm.
 
 ## WHAT'S NEW / CHANGELOG
+[beta 0.2]
+- Small fixes
+- Logging function implemented but not usable at this moment
+- Using a variable to touch GPIO but GPIO detection and offset still not implemented (working on!)
+- Successfully implemented XML files to use it as config.xml (R/W)
+- Added new dependencies and check
+
 [beta 0.1]
 - Almost fixed the "preheat" function to allow low frequencies to be set on fans
 - Fully rewritten code (clearer than it was) 
 - Using "case" instead of "if" as main menu
-- (working on) Detects if the GPIO is unexported
+- Detects if the GPIO is unexported (working on)
 - Add logging function to log files and add color to output (working on)
 - Using "printf" instead of "echo" to get closer to C langage
 - Using XML for configs files. (libxml2 is required!)
@@ -28,6 +35,7 @@ install it with pacman -S bc / apt-get install bc to use this programm.
 - first release
 
 ## Known bugs: 
+ - Tell me :)
  - ~~"preheating" doesn't seem to care about the $phs var. So at this moment it does not work.~~ (almost fixed in beta 0.1, considering it as "fixed")
 
 ## Todo quickly! :
@@ -41,10 +49,11 @@ install it with pacman -S bc / apt-get install bc to use this programm.
  - making a CLI based for setting up when enabling fans and make the daemon using configurations files
 
 ## Functions that (almost?) works:
+ - XML style as config file (config.xml)
  - Enable or disable fans
  - Set custom frequency of the output signal
  - Make a clean CTRL+C exit
- - Check if the required ddependencies are satisfied (not a lot of packages are needed, but it prevents from non-working programm on other OSes/systems)
+ - Check if the required ddependencies are satisfied (not a lot of packages are needed, but it prevents from non-working programm on other OSes/systems) (arch user only)
 
 
 # Basic usage :
