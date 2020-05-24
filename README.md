@@ -1,6 +1,6 @@
 
 # squarePi.sh by DokT under MIT License.
-Made 20/05/2020, last update 23/05/202
+Made 20/05/2020, last update 23/05/2020
 
 It's not a true PWM signal, but a square signal.
 The Raspberry Pi is not capable of that.
