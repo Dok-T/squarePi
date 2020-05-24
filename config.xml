@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <root>
   <informations>
     <software>
@@ -14,9 +15,8 @@
   </informations>
   <config>
     <log>
-      <enabled>
-      1
-      </enabled>
+      <enabled>1</enabled>
+      <log_path>/var/log/squarePi/</log_path>
     </log>
   </config>
 </root>
